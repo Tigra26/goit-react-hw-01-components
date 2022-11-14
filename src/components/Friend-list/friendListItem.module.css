@@ -1,0 +1,29 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 5px dotted rgb(67, 68, 67);
+  }
+  .avatar {
+    margin-bottom: 5px;
+  }
+  .online {
+    background-color: rgb(0, 158, 0);
+  }
+  .offline {
+    background-color: rgb(252, 0, 0);
+  }
+  
+  .online,
+  .offline {
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .name {
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+  }
