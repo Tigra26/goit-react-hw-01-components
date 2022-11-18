@@ -1,7 +1,7 @@
 import propTypes from "prop-types"
 import s from './friendListItem.module.css'
 
-function FriendListItem({, avatar, name, isOnline }) {
+function FriendListItem({avatar, name, isOnline }) {
     return (
         <li className={s.item} >
             <span className={ isOnline ? s.online : s.offline}></span>
