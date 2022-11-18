@@ -1,9 +1,9 @@
 import propTypes from "prop-types"
 import s from './statisticsItem.module.css'
 
-function StatisticsItem({ id, label, percentage}) {
+function StatisticsItem({label, percentage}) {
     return (
-            <li className={s.item} key={id}>
+            <li className={s.item} >
                 <span className={s.label}>{label}</span>
                 <span className={s.percentage}>{percentage}</span>
             </li>
