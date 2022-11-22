@@ -14,6 +14,13 @@ function StatisticsItem({label, percentage}) {
 export default StatisticsItem
 
 StatisticsItem.propTypes = {
-    label: propTypes.string.isRequired,
-    percentage: propTypes.number.isRequired
-}
+    
+    title: propTypes.string,
+    stats: propTypes.arrayOf(
+      propTypes.shape({
+        id: propTypes.string.isRequired,
+        label: propTypes.string.isRequired,
+        percentage: propTypes.number.isRequired,
+      }),
+    ),
+};
