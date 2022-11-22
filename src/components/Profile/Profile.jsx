@@ -38,6 +38,6 @@ Profile.propTypes = {
    stats: propTypes.shape ({
       followers: propTypes.number.isRequired,
       views: propTypes.number.isRequired,
-      likes:propTypes.number.isRequired
-   })
-}
+      likes:propTypes.number.isRequired,
+   }),
+};
