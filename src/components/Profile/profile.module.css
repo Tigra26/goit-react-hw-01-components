@@ -35,7 +35,7 @@
   }
   .stats {
     background-color: rgb(208, 39, 230);
-    width: 100%;
+    width: 240px;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@
   .stats li {
     display: inline-flex;
     flex-direction: column;
-    width: 100%;
+    
     padding: 10px;
     background-color: rgb(243, 170, 243);
     border-radius: 2px;
