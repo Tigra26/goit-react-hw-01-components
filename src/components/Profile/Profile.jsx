@@ -1,5 +1,5 @@
-import propTypes from "prop-types"
-import s from '../Profile/profile.module.css'
+import propTypes from 'prop-types';
+import s from '../Profile/profile.module.css';
 
 function Profile({username, tag, location, avatar, stats}) {
    
@@ -35,9 +35,10 @@ Profile.propTypes = {
    username: propTypes.string.isRequired,
    tag: propTypes.string.isRequired,
    location: propTypes.string.isRequired,
+   avatar: propTypes.string.isRequired,
    stats: propTypes.shape ({
       followers: propTypes.number.isRequired,
       views: propTypes.number.isRequired,
       likes:propTypes.number.isRequired,
-   }),
+   }).isRequired,
 };

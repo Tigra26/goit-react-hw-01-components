@@ -14,12 +14,9 @@ function FriendListItem({avatar, name, isOnline }) {
 export default FriendListItem
 
 FriendListItem.propTypes = {
-    friends: propTypes.arrayOf(
-        propTypes.shape({
+    
           avatar: propTypes.string.isRequired,
           name: propTypes.string.isRequired,
           isOnline: propTypes.bool.isRequired,
-          id: propTypes.number.isRequired,
-        }),
-      ),
+        
 };

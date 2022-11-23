@@ -1,5 +1,6 @@
-import s from './statistics.module.css'
-import StatisticsItem from "./StatisticsItem"
+import s from './statistics.module.css';
+import StatisticsItem from "./StatisticsItem";
+import propTypes from 'prop-types';
 
 
 function Statistics({ statistics, title }) {
@@ -19,4 +20,16 @@ function Statistics({ statistics, title }) {
         </section>
     )
 }
-export default Statistics
+
+ Statistics.propTypes = {
+    title: propTypes.string,
+    statistics: propTypes.arrayOf(
+        propTypes.shape({
+            id: propTypes.string.isRequired,
+            label: propTypes.string.isRequired,
+            percentage: propTypes.number.isRequired,
+        }).isRequired,
+        ).isRequired,
+ };
+
+export default Statistics;
